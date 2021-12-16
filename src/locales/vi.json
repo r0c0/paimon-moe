@@ -13,6 +13,7 @@
     "furnishing": "Đồ Trang Trí",
     "weapons": "Vũ Khí",
     "artifacts": "Thánh Di Vật",
+    "fishing": "Câu Cá",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -46,7 +47,7 @@
     "event": {
       "upcoming": "Những Sự Kiện Sắp Tới",
       "current": "Những Sự Kiện Đang Diễn Ra",
-      "detail": "Timeline"
+      "detail": "Dòng thời gian"
     },
     "discord": {
       "online": "Thành Viên Trực Tuyến",
@@ -109,6 +110,7 @@
     "geoDamageBonus": "Tăng ST NT Nham",
     "sortBy": "Sắp xếp theo...",
     "talentBook": "Sách Thiên Phú",
+    "bossItem": "Boss",
     "ascensionMaterial": "Nguyên Liệu Đột Phá",
     "talentStats": "Chi Tiết Thiên Phú",
     "build": "Build",
@@ -141,10 +143,14 @@
     "import": {
       "title": "Nhập Lịch Sử Cầu Nguyện",
       "faqsButton": "CÂU HỎI THƯỜNG GẶP - NÊN ĐỌC",
+      "readFaq": "Đọc câu hỏi thường gặp",
+      "openFaq": "Mở câu hỏi thường gặp",
+      "choosePlatform": "Hãy chọn nền tảng",
+      "chooseMethod": "Hãy chọn phương pháp mong muốn",
       "nonew": "Không Có Lượt Cầu Nguyện Mới",
       "importNotice1": "Khi nhập, lượt cầu nguyện sẽ được thêm vào hoặc bị thay thế để phù hợp với dữ liệu đã có",
       "importNotice2": "Nếu như không có dữ liệu được lưu trước, lượt cầu nguyện đầu tiên khi nhập dữ liệu sẽ được tính là pity 1",
-      "importNotice3": "Lưu ý, nếu bạn nhập dữ liệu từ tài khoản khác, hãy chắc chắn là bạn đã chia các tài khoản khác nhau ra trong trang cài đặt, nếu không dữ liệu sẽ bị trộn với nhau!",
+      "importNotice3": "Lưu ý, nếu bạn nhập dữ liệu từ tài khoản khác, hãy chắc chắn là bạn đã chia các tài khoản khác nhau ra trong trang cài đặt, nếu không dữ liệu sẽ bị trộn với nhau!",                                                                                                                                                                            
       "saveData": "Lưu dữ liệu cầu nguyện?",
       "reCalculating": "Đang tính toán lại pity...",
       "processing": "Đang xử lý",
@@ -160,9 +166,11 @@
       "close": "Đóng",
       "invalidLink": "Đường liên kết không hợp lệ, vui lòng kiểm tra và thử lại",
       "errorApi": "Lỗi từ API của MiHoYo, vui lòng thử lại sau!",
+      "errorExpired": "Liên kết đã hết hạn, vui lòng thử lại!",
       "timeout": "Kết nối đã hết hạn, vui lòng chờ và thử lại sau",
       "differentAccount": "Lịch sử cầu nguyện này thuộc về một tài khoản khác, hãy chuyển tài khoản ở trong phần Cài Đặt và thử lại!",
       "invalidData": "Dữ liệu trả về bất thường, vui lòng thử lại sau",
+      "noNewData": "Không có lượt cầu nguyện mới, vui lòng đợi khoảng 1 tiếng để dữ liệu cầu nguyện cập nhật!",                                                                  
       "success": "Nhập dữ liệu thành công 😀!",
       "server": "Hãy chọn server:",
       "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu",
@@ -171,6 +179,11 @@
         "Những thông tin sẽ được thu thập:",
         "và",
         "pity từ lịch sử cầu nguyện của bạn"
+      ],
+      "header": [
+        "Nhập và sao lưu lịch sử cầu nguyện Genshin Impact của bạn để giữ nó hơn 6 tháng. Cũng tự động theo dõi pity và thống kê về cầu nguyện của bạn!",
+        "Bạn cũng có thể bật Đồng bộ hóa Drive trong Cài đặt để đồng bộ hóa và sao lưu lịch sử vào Google Drive của bạn",
+        "Xin lưu ý rằng liên kết phản hồi cũ không hoạt động nữa, vui lòng làm theo hướng dẫn mới bên dưới!"
       ],
       "faqs": {
         "title": "Nhập Lịch Sử Cầu Nguyện FAQ",
@@ -201,6 +214,10 @@
         "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
         "a7": "Lịch sử cầu nguyện trên 6 tháng sẽ biến mất hoàn toàn từ server của Mihoyo, nên nếu như bạn không sao lưu dữ liệu trước 6 tháng, nó đã biến mất hoàn toàn"
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "Video hướng dẫn",
         "pc": [
@@ -208,6 +225,29 @@
           "Ấn vào Phản Hồi",
           "Đợi nó load và sẽ có một trang web được mở từ trình duyệt bạn đang dùng",
           "Sao chép & dán đường liên kết vào hộp văn bản bên dưới",
+          "Hãy dán đường liên kết vào đây... https://webstatic..."
+        ],
+        "pc2": [
+          "Mở Genshin Impact (Nếu bạn sử dụng nhiều tài khoản, vui lòng khởi động lại trò chơi)",
+          "Sau đó, mở lịch sử cầu nguyện trong trò chơi và đợi nó tải",
+          "Ấn START trên bàn phím của bạn, sau đó tìm kiếm Powershell",
+          "Ấn vào Windows Powershell, sau đó sao chép và dán tập lệnh bên dưới vào Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "Bạn có thể xem lại đoạn script",
+          "ở đây",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Ấn ENTER sau đó một liên kết sẽ được lưu vào bộ nhớ tạm",
+          "Dán văn bản vào hộp văn bản bên dưới",
+          "Hãy dán đường liên kết vào đây... https://webstatic..."
+        ],
+        "pclog": [
+          "Mở Genshin Impact (Nếu bạn sử dụng nhiều tài khoản, vui lòng khởi động lại trò chơi)",
+          "Sau đó, mở lịch sử cầu nguyện trong trò chơi và đợi nó tải",
+          "Ấn WINDOWS+R trên bàn phím của bạn, sau đó nhập:",
+          "Một cửa sổ notepad sẽ mở ra, sau đó nhấn CTRL + F rồi nhập:",
+          "Sao chép tất cả liên kết từ https://webstatic cho đến khi #/log - url sẽ trông giống như sau: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Dán văn bản vào hộp văn bản bên dưới",
           "Hãy dán đường liên kết vào đây... https://webstatic..."
         ],
         "android": [
@@ -232,7 +272,26 @@
           "Sẽ có một trình duyệt được mở. Sao chép và dán đường liên kết vào bên dưới",
           "Hãy dán đường liên kết vào đây... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "Download Stream on App Store",
+          "here",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Open the app, then allow VPN in system preferences (Settings > General > VPN)",
+          "Install CA (click Sniff Now on Stream App > Install CA > A pop up window will appear and choose allow > Now CA is downloaded",
+          "Go to settings > General > VPN & Device management > Click on Stream Generated CA and install",
+          "Open Genshin Impact then open Wish screen, stay on that page",
+          "Back to Stream App > Choose I've trusted > Tap Sniff Now Button",
+          "Back to Genshin Impact then open the Wish history page",
+          "Wait for page to load",
+          "Back to Stream App > Stop Sniffing",
+          "Click Sniff History > Choose a request that end by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
+          "Click Request tab, then copy the link and paste it below",
+          "Paste link here... https://hk4e-api-os.mihoyo.com...",
+          "If you got any problem, see troubleshooting guide",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
+        ],
         "ps": [
+          "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",
           "Bạn chỉ có thể sử dụng paimon.moe để nhập dữ liệu khi bạn có thư trong game cùng với mã QR để mở một sự kiện trên web",
           "Mở Genshin Impact trên PlayStation của bạn",
           "Mở mail sự kiện có mã QR",
@@ -258,8 +317,10 @@
     "excel": {
       "title": "Nhập Excel",
       "subtitle": "Hãy chọn nguồn excel của bạn đến từ:",
-      "default": "Paimon.moe Export",
-      "takagg": "TakaGG Gacha Export",
+      "default": "Xuất từ Paimon.moe",
+      "takagg": "Xuất từ TakaGG Gacha",
+      "genshinwishes": "Xuất từ GenshinWishes",
+      "wishtally": "WishTally",
       "notice": [
         "Tính năng này vẫn đang trong giai đoạn BETA, hãy sao lưu một bản sao trước, bằng cách vào phần Cài đặt sau đó ấn Xuất ra Excel!",
         "Cầu nguyện có cùng mốc thời gian và tên vật phẩm sẽ KHÔNG bị ảnh hưởng (nên những cầu nguyện hiện có sẽ không bị thay thế)",
@@ -269,6 +330,8 @@
       "selectFile": {
         "default": "Kéo & thả Paimon.moe excel file ở đây, hoặc ấn vào đây để chọn",
         "takagg": "Kéo & thả TakaGG gacha export excel file ở đây, hoặc ấn vào đây để chọn"
+        "genshinwishes": "Kéo & thả GenshinWishes csv file ở đây, hoặc ấn vào đây để chọn",
+        "wishtally": "Kéo & thả Wish Tally excel file ở đây, hoặc ấn vào đây để chọn"
       },
       "processing": "Đang xử lý...",
       "addedOn": "Chèn vào ở:",
@@ -562,6 +625,7 @@
     "synced": "Đã đồng bộ",
     "waiting": "Đang chờ...",
     "syncing": "Đang đồng bộ...",
+                                 
     "lastSync": "Lần đồng bộ gần nhất:",
     "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
     "or": "hoặc",
@@ -573,6 +637,19 @@
       "delete": "Xóa",
       "reset": "Thiết lập lại"
     }
+    "changelog": "Changelog",
+    "exportDescription": "Bạn có thể xuất & nhập dữ liệu Paimon.moe của bạn ở đây",
+    "exportButton": "Xuất & Nhập Dữ Liệu",
+    "export": "Xuất Dữ Liệu",
+    "download": "Tải Dữ Liệu Xuống",
+    "import": "Nhập Dữ liệu",
+    "selectFile": "Chọn JSON File",
+    "exportInfo": "Tải xuống tất cả dữ liệu của bạn đã được lưu trong Paimon.moe",
+    "importWarning": "Nhớ sao lưu dữ liệu của bạn bằng cách xuất trước! Tất cả dữ liệu sẽ được thay thế!",
+    "importContinue": "Tiếp tục",
+    "importSuccess": "Nhập thành công! Đang tải lại sau 5 giây...",
+    "importFailed": "Nhập không thành công!",
+    "email": "Email:"
   },
   "privacypolicy": {
     "title": "Chính sách bảo mật",
@@ -743,5 +820,17 @@
     "artifact": "Thánh Di Vật",
     "setPiece": "Hiệu quả bộ {piece} món",
     "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món"
+  },
+  "fishing": {
+    "title": "Danh Sách Điểm Câu Cá",
+    "subtitle": "Đánh dấu điểm câu là trống khi bạn đã câu hết cá để bắt đầu hẹn giờ hồi sinh",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "setEmpty": "Đã câu hết",
+    "emptyTime": "Chỉnh lại thời gian cho điểm câu trống không:",
+    "clear": "Xoá",
+    "save": "Lưu",
+    "cancel": "Huỷ bỏ"
   }
 }
